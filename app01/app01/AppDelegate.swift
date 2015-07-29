@@ -16,6 +16,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let tabBarController = UITabBarController()
+        let tab1ChildViewController = tabChild1ViewController()
+        let tab2ChildViewController = tabChild2ViewController()
+        let tab3ChildViewController = tabChild3ViewController()
+        
+        tab2ChildViewController.tabBarItem.title = "child2"
+        tab3ChildViewController.tabBarItem.title = "child3"
+        
+        let navigationController = UINavigationController(rootViewController: tab1ChildViewController)
+        navigationController.setNavigationBarHidden(true, animated:true)
+        navigationController.tabBarItem.title = "child1"
+        
+        tabBarController.setViewControllers(
+            [
+                navigationController,
+                tab2ChildViewController,
+                tab3ChildViewController
+            ]
+            , animated: true
+        )
+        
+
+        
+        self.window?.rootViewController = tabBarController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
