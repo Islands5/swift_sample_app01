@@ -16,6 +16,7 @@
 		AC4E87A61B5F6D7100F125E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4E87A41B5F6D7100F125E9 /* LaunchScreen.xib */; };
 		AC4E87B21B5F6D7100F125E9 /* app01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E87B11B5F6D7100F125E9 /* app01Tests.swift */; };
 		AC992C121B71A5100017DDAC /* navi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AC992C111B71A5100017DDAC /* navi.jpeg */; };
+		ACB805E41B7B95C20044294B /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB805E31B7B95C20044294B /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		AC4E87B01B5F6D7100F125E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC4E87B11B5F6D7100F125E9 /* app01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app01Tests.swift; sourceTree = "<group>"; };
 		AC992C111B71A5100017DDAC /* navi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = navi.jpeg; sourceTree = "<group>"; };
+		ACB805E31B7B95C20044294B /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				AC196F2A1B6791F100F9AD15 /* tabChild2ViewController.swift */,
 				AC196F2C1B67921200F9AD15 /* tabChild3ViewController.swift */,
 				AC196F2E1B67A0D100F9AD15 /* subViewController.swift */,
+				ACB805E31B7B95C20044294B /* CustomNavigationController.swift */,
 			);
 			path = app01;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB805E41B7B95C20044294B /* CustomNavigationController.swift in Sources */,
 				AC4E879C1B5F6D7100F125E9 /* AppDelegate.swift in Sources */,
 				AC196F2D1B67921200F9AD15 /* tabChild3ViewController.swift in Sources */,
 				AC196F291B6791D900F9AD15 /* tabChild1ViewController.swift in Sources */,

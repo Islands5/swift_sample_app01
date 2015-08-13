@@ -14,25 +14,21 @@ class subViewController: UIViewController {
         super.viewDidLoad()
         let windowSize = UIScreen.mainScreen().bounds.size
         let mainView = UIView(frame: CGRectMake(0, 0, windowSize.width, windowSize.height))
-        let naviImage = UIImage(named: "navi.jpeg")
-        let navArea = UIImageView(frame: CGRectMake(0, 0, windowSize.width, 100))
-        navArea.image = naviImage
-        let backBtn = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
-        let navAreaSize = navArea.frame.size
+        //let naviImage = UIImage(named: "navi.jpeg")
+        //let navArea = UIImageView(frame: CGRectMake(0, 0, windowSize.width, 100))
+        //navArea.image = naviImage
+        
+        //let navAreaSize = navArea.frame.size
         
         mainView.backgroundColor = UIColor.blueColor()
         
-        navArea.backgroundColor = UIColor.greenColor()
+        //navArea.backgroundColor = UIColor.greenColor()
         
-        backBtn.setTitle("戻る", forState: UIControlState.Normal)
-        backBtn.sizeToFit()
-        backBtn.backgroundColor = UIColor.blueColor()
-        backBtn.addTarget(self, action: "didTouchBack:", forControlEvents: UIControlEvents.TouchUpInside)
-        backBtn.center = CGPoint(x: navAreaSize.width - backBtn.frame.size.width * 1.5, y: navAreaSize.height - backBtn.frame.size.height * 1.5)
+
+        //backBtn.center = CGPoint(x: navAreaSize.width - backBtn.frame.size.width * 1.5, y: navAreaSize.height - backBtn.frame.size.height * 1.5)
         
         self.view.addSubview(mainView)
-        self.view.addSubview(navArea)
-        self.view.addSubview(backBtn)
+        //self.view.addSubview(navArea)
         // Do any additional setup after loading the view.
     }
 
@@ -41,9 +37,21 @@ class subViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func didTouchBack(button :UIButton){
-        self.navigationController?.popViewControllerAnimated(true)
-    }
+//    override func viewDidAppear(animated: Bool) {
+//        let windowSize = UIScreen.mainScreen().bounds.size
+//        let navArea = UIImageView(frame: CGRectMake(0, 0, windowSize.width, 100))
+
+//        println("test1")
+        
+//    }
+    
+//    override func viewDidDisappear(animated: Bool) {
+//        self.navigationController.view.removeFromSuperview()
+//        println("test2")
+//    }
+    
+
+    
     
 
     /*
